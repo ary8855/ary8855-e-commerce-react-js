@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Box from "@mui/material/Box";
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 export default function ItemCount({ stock, initial, onAdd }) {
   const [count, setCount] = useState(initial);
@@ -25,12 +28,14 @@ export default function ItemCount({ stock, initial, onAdd }) {
           width: "fit-content",
         }}
       >
-        <h2>Stock: {stock}</h2>
+        <h2>Stock: {stock}</h2>        
+        <Stack spacing={2} direction="row">
+          <Button variant="outlined" onClick={() => handleIncrease()}>Increase</Button>
+          <Button variant="outlined" onClick={() => handleDecrease()}>Decrease</Button>
+          <Button variant="outlined" onClick={() => setCount(initial)}>Reset</Button>
+          <Button variant="contained" onClick={() => onAdd(count)}>Add to Cart</Button>
+        </Stack>
         <h3>Item Count: {count}</h3>
-        <button onClick={() => handleIncrease()}>Increase</button>
-        <button onClick={() => handleDecrease()}>Remove</button>
-        <button onClick={() => setCount(initial)}>Reset</button>
-        <button onClick={() => onAdd(count)}>Add to Cart</button>
       </Box>
     </>
   );
