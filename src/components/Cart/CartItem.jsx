@@ -1,5 +1,3 @@
-import { CartContext } from "../CartContext";
-import { useContext } from "react";
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -8,8 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 export default function CartItem({ product }) {
-  const { id, title, description, img, price, count } = product;
-  const { removeFromCart, buyAll, clearCart } = useContext(CartContext);
+  const { title, img, price, count } = product;
   return (
     <Card sx={{ display: 'flex' }}>
       <CardMedia
