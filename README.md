@@ -8,7 +8,7 @@ Bienvenido a mi proyecto de React realizado en CoderHouse, el mismo consiste en 
 * añadir datos de usuario y comprar
 
 ### `Modo de uso`
-Descargar el .zip del repo de GitHub, extraer los archivos, abrir la carpeta en VSCode, escribir el comando 'npm i' para instalar dependencias necesarias, como utilizar la página: https://github.com/ary8855/ary8855-e-commerce-react-js/blob/master/tutorial%20compra.mp4
+Es necesario tener NodeJS, descargar el .zip del repo de GitHub, extraer los archivos, abrir la carpeta con VSCode, escribir el comando 'npm i' para instalar dependencias necesarias, como utilizar la página: https://github.com/ary8855/ary8855-e-commerce-react-js/blob/master/tutorial%20compra.mp4
 
 ### `MUI`
 Interfaz robusta de uso amigable y moderna con estilo material, utilizada por plataformas reconocidas(NASA, Amazon, Spotify, etc).
